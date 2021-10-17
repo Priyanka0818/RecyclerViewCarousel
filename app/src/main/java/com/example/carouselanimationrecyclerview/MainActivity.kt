@@ -7,13 +7,13 @@ import androidx.recyclerview.widget.PagerSnapHelper
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.SnapHelper
 import com.example.carouselanimationrecyclerview.adapter.ImageViewCarouselAdapter
-import com.example.carouselanimationrecyclerview.utils.CenterZoomLayoutManager
+import com.example.carouselanimationrecyclerview.utils.CarouselLayoutManager
 
 
 class MainActivity : AppCompatActivity() {
 
     var recyclerView: RecyclerView? = null
-    var layoutManager: CenterZoomLayoutManager? = null
+    var layoutManager: CarouselLayoutManager? = null
     var snapHelper: SnapHelper? = null
     var imageList: ArrayList<String>? = ArrayList()
 
@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         //for carousel animation in recyclerview
         layoutManager =
-            CenterZoomLayoutManager(this@MainActivity, LinearLayoutManager.HORIZONTAL, false)
+            CarouselLayoutManager(this@MainActivity, LinearLayoutManager.HORIZONTAL, false)
         recyclerView?.setLayoutManager(layoutManager)
 
         imageList?.add("https://picsum.photos/seed/picsum/200/300")

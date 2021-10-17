@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Recycler
 
-class CenterZoomLayoutManager : LinearLayoutManager {
+class CarouselLayoutManager : LinearLayoutManager {
     private val mShrinkAmount = 0.35f
     private val mShrinkDistance = 13f
 
